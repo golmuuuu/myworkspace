@@ -24,7 +24,7 @@ public class MusicController {
 		int view = View.HOME;
 		while(true) {
 			switch (view) {
-			// 메인
+			// 메인 안녕 누나
 			case View.HOME: view = home(); break;
 			
 			//고객 
@@ -50,6 +50,7 @@ public class MusicController {
 	}
 
 	private int home() {
+		System.out.println("---Main---");
 		System.out.println("---Main---");
 		System.out.println("1.로그인 2.노래차트 3.이용권 구매 \n4.고객센터 5.회원가입 6.자유게시판\n0.종료");
 		System.out.print("번호를 입력해주세요! >");

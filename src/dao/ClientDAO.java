@@ -7,7 +7,11 @@ import util.JDBCUtil;
 
 public class ClientDAO {
 
+
+	public String hello;
+
 	private int hello = 0;
+
 	private static ClientDAO instance = null;
 	private ClientDAO() {}
 	public static ClientDAO getInstance() {

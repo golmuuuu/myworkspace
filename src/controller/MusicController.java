@@ -24,7 +24,7 @@ public class MusicController {
 		int view = View.HOME;
 		while(true) {
 			switch (view) {
-			// 메인
+			// 메인 안녕 누나
 			case View.HOME: view = home(); break;
 			
 			//고객 

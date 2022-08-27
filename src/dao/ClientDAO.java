@@ -6,6 +6,8 @@ import java.util.Map;
 import util.JDBCUtil;
 
 public class ClientDAO {
+
+	public String hello;
 	private static ClientDAO instance = null;
 	private ClientDAO() {}
 	public static ClientDAO getInstance() {
@@ -15,7 +17,7 @@ public class ClientDAO {
 	
 	JDBCUtil jdbc = JDBCUtil.getInstance();
 	
-	// 로그인 DAO메소드 
+	// 로그인 DAO메소드
 	public Map<String, Object> login(String id, String pwd) {
 		return jdbc.selectOne(" SELECT * FROM CLIENT "
 				+ " WHERE CLI_ID = '" + id 
